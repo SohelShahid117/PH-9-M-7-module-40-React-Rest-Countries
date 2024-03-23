@@ -10,6 +10,9 @@ function App() {
       <h2>40-1 Module Introduction, Load Countries Using UseEffect</h2>
       <h3>40-2 Display Countries In A Simple Way, Folder Structure</h3>
       <h3>40-3 Recap Folder Structure And Turn Off Prop Types Eslint Warning</h3>
+      <h4>40-4 Toggle State Based On Click And Conditional Rending</h4>
+      <h3>40-5 Conditional CSS And Conditional Style</h3>
+      <h2>40-6 (Advanced) Updating State In Arrays And Pass Parameter</h2>
       <Countries></Countries>
       
       
