@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Countries from './Components/Countries/Countries'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <h1>Module 40: Simple React Rest Countries</h1>
+      <h2>40-1 Module Introduction, Load Countries Using UseEffect</h2>
+      <h3>40-2 Display Countries In A Simple Way, Folder Structure</h3>
+      <h3>40-3 Recap Folder Structure And Turn Off Prop Types Eslint Warning</h3>
+      <Countries></Countries>
+      
+      
+
     </>
   )
 }
 
 export default App
+
+/*
+  1.Component
+  2.JSX
+  3.Props
+  4.event handler
+  5.state manegment
+  6.useEffect--->kaj holo--->API data load kora
+
+*/
