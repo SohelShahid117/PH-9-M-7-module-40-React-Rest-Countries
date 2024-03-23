@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './contryyy.css'
 
-const Countryyy = ({counntryyy,handleVisitedCountries}) => {
+const Countryyy = ({counntryyy,handleVisitedCountries,handleVisitedFlags}) => {
     // console.log(JSON.parse(cntryyy))
     console.log(counntryyy)
 
@@ -16,7 +16,8 @@ const Countryyy = ({counntryyy,handleVisitedCountries}) => {
         // console.log('hi')
     }
 
-    console.log(handleVisitedCountries)
+    // console.log(handleVisitedCountries)
+    // console.log(handleVisitedFlags)
 
 
 
@@ -34,8 +35,11 @@ const Countryyy = ({counntryyy,handleVisitedCountries}) => {
             <small>Code : {cca3}</small>
 
             <br/>
-            <button onClick={handleVisitedCountries}>Mark Visited</button>
+            {/* <button onClick={handleVisitedCountries()}>Mark Visited</button> */}
+            <button onClick={()=>handleVisitedCountries(counntryyy)}>Mark Visited</button>
             <br/>
+            <button onClick={()=>handleVisitedFlags(counntryyy.flags.png)}>Add visited Flag</button>
+            <br />
 
             {/* <button onClick={handleVisited}>Visited</button> */}
             <button onClick={handleVisited}>{visited?'Visited':'Going'}</button>

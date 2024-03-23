@@ -13,6 +13,8 @@ function App() {
       <h4>40-4 Toggle State Based On Click And Conditional Rending</h4>
       <h3>40-5 Conditional CSS And Conditional Style</h3>
       <h2>40-6 (Advanced) Updating State In Arrays And Pass Parameter</h2>
+      <h3>40-7 (Recap) Lift Up The State Recap For Visited Flags</h3>
+      <h2>40-8 (Optional) Prop Drilling, Pass Props In Multi Level</h2>
       <Countries></Countries>
       
 

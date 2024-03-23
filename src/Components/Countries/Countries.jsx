@@ -6,6 +6,9 @@ import './countriess.css'
 
 const Countries = () => {
     const [countriesss,setCountriesss] = useState([])
+    const [visitedCountries,setVisitedCountries] = useState([])
+    const [visitedFlags,setVisitedFlags] = useState([])
+
 
     // const [markVisitedCountries,setMarkVisitedCountries] = useState([])
 
@@ -23,8 +26,16 @@ const Countries = () => {
 
 
     const handleVisitedCountries = (country) =>{
-        console.log(country)
-        alert('hi')
+        console.log(country);
+        const newVisitedCountries = [...visitedCountries,country]
+        setVisitedCountries(newVisitedCountries)
+        // alert('hi')
+    }
+
+    const handleVisitedFlags = (flag) =>{
+        const newVisitedFlag = [...visitedFlags,flag];
+        setVisitedFlags(newVisitedFlag)
+        console.log('adding flag')
     }
 
     return (
@@ -32,14 +43,24 @@ const Countries = () => {
             <h3>Countries:{countriesss.length}</h3>
 
             <div>
-                Visited countries :
+                <h4>Visited countries : {visitedCountries.length}</h4>
+                {/* Visited countries : {newVisitedCountries.length} */}
                 <ul>
+                    {
+                        visitedCountries.map((newCntry)=><li key={newCntry.ccn3}>{newCntry.name.common}</li>)
+                    }
 
                 </ul>
             </div>
+            <div className="flag-container">
+                {
+                    visitedFlags.map((flag,indx)=><img key={indx} src={flag}/>)
+                }
+
+            </div>
 
             {/* <Countryyy cntryyy = {countriesss}></Countryyy> */}
-            
+
             <div className="countriess">
                 {
                     countriesss.map((cntry)=>
@@ -47,6 +68,7 @@ const Countries = () => {
                             key={cntry.ccn3} 
                             counntryyy = {cntry}
                             handleVisitedCountries = {handleVisitedCountries}
+                            handleVisitedFlags = {handleVisitedFlags}
                         ></Countryyy>
                     )
                 }
