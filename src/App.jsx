@@ -15,7 +15,6 @@ function App() {
       <h2>40-6 (Advanced) Updating State In Arrays And Pass Parameter</h2>
       <Countries></Countries>
       
-      
 
     </>
   )

@@ -17,7 +17,7 @@ const Countries = () => {
         .then((res)=>res.json())
         // .then((data)=>console.log(data))
         .then((data)=>setCountriesss(data))
-        console.log(countriesss)
+        // console.log(countriesss)
 
     },[])
 
@@ -26,16 +26,20 @@ const Countries = () => {
         console.log(country)
         alert('hi')
     }
+
     return (
         <div >
             <h3>Countries:{countriesss.length}</h3>
+
             <div>
                 Visited countries :
                 <ul>
 
                 </ul>
             </div>
+
             {/* <Countryyy cntryyy = {countriesss}></Countryyy> */}
+            
             <div className="countriess">
                 {
                     countriesss.map((cntry)=>
